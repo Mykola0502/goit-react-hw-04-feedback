@@ -35,13 +35,13 @@ export const App = () => {
 
   return (
     <Container>
-      <Section title="Please leave feedback" children>
+      <Section title="Please leave feedback">
         <FeedbackOptions
           options={options}
           onLeaveFeedback={leaveFeedback}
         ></FeedbackOptions>
       </Section>
-      <Section title="Statistics" children>
+      <Section title="Statistics">
         {countTotalFeedback() ? (
           <Statistics
             options={options}
